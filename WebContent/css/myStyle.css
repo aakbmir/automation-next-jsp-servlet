@@ -1,0 +1,92 @@
+.box {
+	height: 100%;
+	position: relative;
+	width: 50%;
+	float: left;
+}
+
+.one {
+	border: 1px solid #ccc;
+	background: #ebebeb;
+}
+
+.two {
+	border: 5px dotted #bbb;
+	background: #acacac;
+}
+
+.error {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+#wgtmsr {
+	width: 160px;
+}
+
+.top {
+	height: 20%;
+}
+
+.bottom {
+	position: absolute;
+	height: 50%;
+}
+
+.box1 {
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+.bodyImg {
+	background: url("images/img.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	"
+}
+
+.submitAgr {
+	font-size: 10pt;
+	padding: 3px;
+	width: 70px;
+}
+
+.columnOne {
+	width: 3%;
+	text-align: center;
+	padding: 5px;
+	border-top: 1px solid black;
+}
+
+.columnThree {
+	padding: 5px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.columnTwo {
+	padding: 5px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltipText {
+	visibility: hidden;
+	background-color: black;
+	position: absolute;
+}
+
+.tooltip:Hover .tooltipText {
+	visibility: visible;
+}
+

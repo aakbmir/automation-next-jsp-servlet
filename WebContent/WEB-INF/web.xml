@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ANext</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+	<param-name>tempfile.dir</param-name>
+	<param-value>tmpfiles</param-value>
+  </context-param>
+	
+  <listener>
+	<listener-class>common.FileLocationContextListener 
+       </listener-class>
+  </listener>
+   
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>mdvOnline.LoginValidation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/MDVLoginServlet</url-pattern>
+  </servlet-mapping>  
+  <servlet>
+	<servlet-name>ProcessAgr</servlet-name>
+	<servlet-class>mdvOnline.MDVAgreementList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>ProcessAgr</servlet-name>
+	<url-pattern>/AgrCodeServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+	<servlet-name>processAgr2</servlet-name>
+	<servlet-class>mdvOnline.MDVAgreementCode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>processAgr2</servlet-name>
+	<url-pattern>/AgreementDetailsServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+	<servlet-name>printDetails</servlet-name>
+	<servlet-class>mdvOnline.MDVPDFGeneration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>printDetails</servlet-name>
+	<url-pattern>/printServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>mdtTool.MDTLoginValidation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/MDTLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HomePage</servlet-name>
+    <servlet-class>mdtTool.MDTDashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomePage</servlet-name>
+    <url-pattern>/MDTHomePageServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>MDVOffline</servlet-name>
+    <servlet-class>mdvOffline.MDVOfflineMainClass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MDVOffline</servlet-name>
+    <url-pattern>/MDVOfflineServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>About</servlet-name>
+    <servlet-class>common.About</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>About</servlet-name>
+    <url-pattern>/AboutServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
