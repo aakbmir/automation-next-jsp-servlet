@@ -1,4 +1,4 @@
-# IBM Services Migrated Data Traceability and Validation Tool
+# Migrated Data Traceability and Validation Tool
 
 # Objective:-
 The objective of this application is to provide a 360-degree view of the migrated data across different stages of data migration – Source System, Staging area, Load area, Migrate area and Target System. 
